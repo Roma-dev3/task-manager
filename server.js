@@ -1,3 +1,14 @@
-const sum = (a, b) => a + b;
+const express = require("express");
+const bodyParser = require("body-parser");
 
-console.log(sum(10, 7));
+const app = express(); 
+
+const port = 3000;
+
+//midleware
+
+app.use(bodyParser.json());
+
+app.listen(port, () => {
+    console.log(`Server listening on ${port} and starting at http://localhost:${port}`)
+});
