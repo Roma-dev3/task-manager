@@ -3,8 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
-    "type":"module",
+    "type": "module",
     "scripts": {
+        "dev": "nodemon server.js",
         "start": "node server.js",
         "format:check:": "prettier --check .",
         "format:write": "prettier --write .",
@@ -14,7 +15,6 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "type": "commonjs",
     "dependencies": {
         "body-parser": "^2.2.2",
         "express": "^5.2.1"
@@ -24,6 +24,7 @@
         "eslint": "^9.39.2",
         "eslint-config-prettier": "^10.1.8",
         "globals": "^17.0.0",
+        "nodemon": "^3.1.11",
         "prettier": "^3.7.4"
     }
 }
